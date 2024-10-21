@@ -15,7 +15,7 @@ namespace AppData.Migrations
                 name: "DeThis",
                 columns: table => new
                 {
-                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     TenDeThi = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     MonHoc = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     NgayThi = table.Column<DateTime>(type: "datetime2", nullable: false),
